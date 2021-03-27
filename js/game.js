@@ -22,21 +22,21 @@ let rounds = 0;
 //Defined The Path For Audio And Give The Audio Values For The Variables
 function playTied() {
 
-    const TiedAudio = new Audio("/sound/beep.mp3");
+    const TiedAudio = new Audio("sound/beep.mp3");
     TiedAudio.play();
 
 };
 
 function playWin() {
 
-    const WinAudio = new Audio("/sound/Win.mp3");
+    const WinAudio = new Audio("sound/Win.mp3");
     WinAudio.play();
 
 };
 
 function playLose() {
 
-    const LoseAudio = new Audio("/sound/Lose.mp3");
+    const LoseAudio = new Audio("sound/Lose.mp3");
     LoseAudio.play();
 
 };
@@ -161,8 +161,8 @@ function main() {
             play(this.textContent, cpuChoice);
             setTimeout(() => {
                 //Update Images
-                userHand.src = `/img/${this.textContent}.png`;
-                cpuHand.src = `/img/${cpuChoice}.png`;
+                userHand.src = `img/${this.textContent}.png`;
+                cpuHand.src = `img/${cpuChoice}.png`;
             }, 2000);
             //Animation
             userHand.style.animation = "shakeuser 2s ease";
@@ -197,8 +197,8 @@ function restartGame() {
     cname.innerHTML = 'C';
     pname.innerHTML = 'P';
     start.innerHTML = 'Make your choice!';
-    userHand.src = `/img/Rock.png`;
-    cpuHand.src = `/img/Rock.png`;
+    userHand.src = `img/Rock.png`;
+    cpuHand.src = `img/Rock.png`;
 
 }
 
