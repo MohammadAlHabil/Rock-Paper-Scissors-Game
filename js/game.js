@@ -29,14 +29,14 @@ function playTied() {
 
 function playWin() {
 
-    const WinAudio = new Audio("sound/Win.mp3");
+    const WinAudio = new Audio("sound/win.mp3");
     WinAudio.play();
 
 };
 
 function playLose() {
 
-    const LoseAudio = new Audio("sound/Lose.mp3");
+    const LoseAudio = new Audio("sound/lose.mp3");
     LoseAudio.play();
 
 };
