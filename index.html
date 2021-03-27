@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="icon" type="image/png" href="/img/r.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+
+    <header>
+        <div><span>Player</span><span id="user-score">0</span></div>
+        <img src="/img/logo.png">
+        <div><span>Computer</span><span id="cpu-score">0</span></div>
+    </header>
+
+    <main>
+        <div class="name">
+            <h4 class="pname">P</h4>
+            <p class="rd">
+                <span class="round">0</span>
+                <span>Rounds</span>
+            </p>
+            <h4 class="cname">C</h4>
+        </div>
+        <div class="hands">
+            <img class="user-hand" src="/img/Rock.png" alt="" />
+            <img class="cpu-hand" src="/img/Rock.png" alt="" />
+        </div>
+        <div class="words">
+            <p id="start">Make your choice!</p>
+        </div>
+        <div class="btn">
+            <div class="options">
+                <div><button id="rock"><img src="/img/r.png">Rock</button></div>
+                <div><button id="paper"><img src="/img/p.png">Paper</button></div>
+                <div><button id="scissors"><img src="/img/s.png">Scissors</button></div>
+            </div>
+            <div><button id="restart" class="Restart">Restart</button></div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/MohammadAlHabil"><i class="lab la-github"></i> Mohammad AlHabil</a>
+    </footer>
+
+    <div class="modal">
+        <div class="modal-content">
+            <div id="result"></div>
+        </div>
+    </div>
+
+</body>
+<script src="/js/game.js"></script>
+
+</html>
